@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+ 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(19, 18, 18, 0.678);
+}
+
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), #edf1f4);
+    border-radius: 40px;
+    box-shadow: 15px 15px 20px rgba(7, 115, 238, 0.747), -1px -1px 20px rgb(45, 127, 194);
+}
+
+.range {
+    width: 400px;
+    height: 15px;
+    appearance: none;
+    background: #edf1f4;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px -5px -10px #fff, inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.range::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #0074cf;
+    box-shadow: -407px 0 0 400px #0074cf;
+    cursor: pointer;
+}
+
+#rangeValue {
+    position: relative;
+    text-align: center;
+    width: 60px;
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 500;
+    background: #0074cf;
+    margin-left: 15px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgb(3, 160, 165), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset -5px -5px 5px rgba(255, 255, 255, 0.35);
+}
