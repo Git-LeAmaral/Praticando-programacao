@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM - Manipulando classes de elementos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <h3>Manipulando Classes de Elementos</h3>
+
+    <button type="button" onclick="modificaClasse()">Aplicar classe</button>
+
+    <hr>
+    <div id="change" class="estilo1">
+
+    </div>
+
+    <script>
+
+        function modificaClasse() {
+            document.getElementById('change').className = 'estilo2'
+        }
+
+    </script>
+
+</body>
+</html>

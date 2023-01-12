@@ -1,0 +1,14 @@
+.estilo1 {
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    background: #fbff00;
+}
+
+.estilo2 {
+    border: 1px solid;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #00b7ff;
+}
