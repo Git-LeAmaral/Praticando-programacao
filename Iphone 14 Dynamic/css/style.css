@@ -21,6 +21,8 @@ body {
     height: 600px;
     background: #666;
     border-radius: 50px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 1.5);
+
 }
 
 .box::before {
