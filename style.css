@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    color: #f0f8ff;
+    padding: 10px;
+    background-color: #837b7b;
+}
+
+.cabecalho h2 {
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}.container .aula {
+    max-height: 300px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #837b7b;
+    box-shadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px, 
+    rgba(0, 0, 0, 0.56) 0px 8px 16px -8px;
+    border: 3px solid #bbb;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+}
+
+.container h2 {
+    color: #f0f8ff;
+    font-size: 25px;
+    padding: 12px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background: #837b7b;
+}
+
+.container .checkpoint a {
+    color: #d0ee28;
+    transition: all .3s;
+}
+
+.checkpoint a:hover {
+    color: #f0a90f;
+}
+
+.container .aula a {
+    color: #f0a90f;
+    transition: all .3s;
+}
+
+.container .aula a:hover {
+    color: #d0ee28;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 25px;
+    background-color: #837b7b;
+    color: #f0f8ff;
+}
+
+.rodape p {
+    color: #f0a90f;
+    font-weight: 700;
+}
+
+.rodape p span {
+    color: #f0f8ff;
+    font-weight: 300;
+}
+
+.rodape .redes {
+    display: flex;
+    justify-content: space-around;
+    width: 260px;
+}
+
+.rodape a {
+    color: #f0f8ff;
+    font-size: 24px;
+}
