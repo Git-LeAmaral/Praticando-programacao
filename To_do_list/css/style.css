@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(1,2,15);
+  background: radial-gradient(circle, rgba(1,2,15,1) 25%, rgba(9,9,121,1) 57%, rgba(0,212,255,1) 100%);
+  background-repeat: no-repeat;
+}
+
+button {
+  background-color: #fdfdfd;
+  color: #102f5e;
+  border: 2px solid #102f5e;
+  padding: .3rem .6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s ease-in-out;
+}
+
+button:hover {
+  background-color: #102f5e;
+  color: #fff;
+}
+
+button:hover > i {
+  color: #fff;
+}
+
+button i {
+  color: #102f5e;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+input, select {
+  padding: .25rem .5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.todo-container {
+  max-width: 450px;
+  margin: 3rem auto;
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.todo-container header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form, #edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form p,
+#edit-form p {
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-control input {
+  margin-right: .3rem;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
+.form-control button {
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+#cancel-edit-btn {
+  margin-top: 1rem;
+  border-radius: .5rem;
+  color: #e70909;
+  border: 1px solid #e70909;
+}
+
+#cancel-edit-btn:hover {
+  background-color: #e70909;
+  color: #fff;
+}
+
+#toolbar {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
+#toolbar h4 {
+  margin-bottom: .5rem;
+}
+
+#search {
+  border-right: 1px solid #ddd;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search form {
+  display: flex;
+}
+
+#search input {
+  width: 100%;
+  margin-right: .3rem;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
+#search button {
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+  border-radius: .5rem;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: #ddd;
+  transition: .3s;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: .9rem;
+}
+
+.todo button {
+  margin-left: .4rem;
+  border-radius: .5rem;
+}
+
+.done {
+  background-color: #0b6d13;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
